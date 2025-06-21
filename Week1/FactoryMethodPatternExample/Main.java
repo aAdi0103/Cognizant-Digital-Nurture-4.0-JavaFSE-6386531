@@ -1,17 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        // Word
-        DocumentFactory wordFactory = new WordFactory();
+        DocumentCreation wordFactory = new WordFactory();
         Document wordDoc = wordFactory.createDocument();
         wordDoc.open();
 
-        // PDF
-        DocumentFactory pdfFactory = new PdfFactory();
+        DocumentCreation pdfFactory = new PdfFactory();
         Document pdfDoc = pdfFactory.createDocument();
         pdfDoc.open();
-
-        // Excel
-        DocumentFactory excelFactory = new ExcelFactory();
+        DocumentCreation excelFactory = new ExcelCreation();
         Document excelDoc = excelFactory.createDocument();
         excelDoc.open();
     }

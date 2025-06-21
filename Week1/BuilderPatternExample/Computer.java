@@ -1,52 +1,45 @@
 public class Computer {
-    private String cpu;
-    private String memory;
-    private String storageDrive;
+    private String CPU;
+    private String RAM;
+    private String Storage;
 
     public Computer(Builder builder) {
-        this.cpu = builder.cpu;
-        this.memory = builder.memory;
-        this.storageDrive = builder.storageDrive;
+        this.CPU = builder.CPU;
+        this.RAM = builder.RAM;
+        this.Storage = builder.Storage;
     }
 
-    public String getCpu() {
-        return cpu;
+    public String getCPU() {
+        return CPU;
     }
-
-    public String getMemory() {
-        return memory;
+    public String getRAM() {
+        return RAM;
     }
-
-    public String getStorageDrive() {
-        return storageDrive;
+    public String getStorage() {
+        return Storage;
     }
-
     @Override
     public String toString() {
-        return "CPU: " + cpu + ", Memory: " + memory + ", Storage: " + storageDrive;
+        return "CPU: " + CPU + ", RAM: " + RAM + ", Storage: " + Storage;
     }
 
     public static class Builder {
-        String cpu;
-        String memory;
-        String storageDrive;
-
-        public Builder withCpu(String cpu) {
-            this.cpu = cpu;
+        String CPU;
+        String RAM;
+        String Storage;
+        public Builder withCPU(String CPU) {
+            this.CPU = CPU;
             return this;
         }
-
-        public Builder withMemory(String memory) {
-            this.memory = memory;
+  public Builder withMemory(String RAM) {
+            this.RAM = RAM;
             return this;
         }
-
-        public Builder withStorage(String storageDrive) {
-            this.storageDrive = storageDrive;
+        public Builder withStorage(String Storage) {
+            this.Storage = Storage;
             return this;
         }
-
-        public Computer assemble() {
+ public Computer assemble() {
             return new Computer(this);
         }
     }

@@ -1,3 +1,3 @@
-public abstract class DocumentFactory {
+public abstract class DocumentCreation {
     public abstract Document createDocument();
 }
