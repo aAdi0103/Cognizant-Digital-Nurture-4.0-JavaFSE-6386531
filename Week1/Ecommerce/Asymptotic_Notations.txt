@@ -1,0 +1,29 @@
+Big O notation is a mathematical way to describe the performance or complexity of an algorithm. 
+It also Shows how the runtime and memory usage grows when number of inputs Increases.
+
+Performance of an algorithm defined in 2 terms:
+Time complexity(TC) — how long an algo takes to run.
+Space complexity(SC) — how much memory it uses for the execution.w
+
+How Big O Notation Helps in Analyzing Algorithms?
+These 2 helps us to analyze the algorithm as TC and SC gives high level understanding that how much time is taken and how much space is taken.
+
+Common Big O complexities
+O(1) Constant Time          To access any array Index
+O(logn)	Logarithmic Time	Binary search algorithm takes O(logn) time.
+O(n)	Linear Time	        to Traverse an array.
+O(nlogn) Linearithmic Time	Merge sort, Quick sort.
+
+
+Best, Average, and Worst Case for Search Operations:
+
+1. Linear Search
+Searches through each element one by one.
+Best Case: O(1) – element is at the start
+Average Case: O(n/2) → simplified to O(n)
+Worst Case: O(n) – element is at the end or not present
+
+2. Binary Search (sorted array)
+Best Case: O(1) – element is in the middle(as in BS we divide entire array in 2 parts using  mid,start and end pointer);
+Average Case: O(log n)
+Worst Case: O(log n) – element is not found after all divisions
