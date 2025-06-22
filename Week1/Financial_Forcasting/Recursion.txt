@@ -1,0 +1,26 @@
+Recursion means function calling itself again and again to solve a smaller problem until it reaches a base case.
+
+For ex:
+ int factorial(int n) {
+    if (n <= 1) return 1;   // base case
+    return n * factorial(n - 1); // recursive case
+}
+
+Above is a Example to find Factorial of a number. Recursion uses a call Stack to monitor function calls. Here a Function is calling itself till number is greater or equal to 1;
+
+Recursion simplifies complex problems by breaking them into smaller subproblems. Each recursive call solve a smaller portion of the problem, and then the results of all these subproblems are combined to form the final result.
+
+Components of Recursion:
+1. Base Case:
+   - The condition under which the recursion stops. It prevents infinite loops and provides a direct solution to the simplest form of the problem.
+   - Example: In the factorial calculation, the base case is when the input is 0 or 1, for which the factorial is 1.
+
+2. Recursive Case:
+   - The part of the function where the problem is broken down into smaller instances of itself.
+   - Example: In factorial calculation, the recursive case is `factorial(n) = n * factorial(n-1)`.
+
+
+
+
+
+
