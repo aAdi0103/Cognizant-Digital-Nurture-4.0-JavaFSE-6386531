@@ -1,0 +1,10 @@
+Module 1:
+
+This module equips me with essential design principles and patterns that are critical for developing robust and scalable software. By studying the SOLID principles  Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency i understood how to structure the code to be modular, flexible, and easier to extend and modify. These principles helps to reduce code complexity, improve readability and promote separation of concerns.
+Also, the module introduces common design patterns categorized into Creational, Structural, and Behavioral patterns. Through patterns like Factory, Singleton, Adapter, Strategy, and Observer i learned the ability to handle object creation, communication, and structural relationships more effectively.This helps me to apply these concepts in the Exercises that we are provided to solve.
+
+
+Module 2:
+
+This module eqips me to develop a strong foundation in data structures and algorithms and enable me to solve complex programming problems efficiently. I learned the ability to choose the most appropriate data structures such as array, linked list, stack, queue, tree, graphs based on specific problem need. I also learned various searching algorithms like linear and binary search to find elements in a array of data and use sorting algorithms such as bubble sort, merge sort, or quick sort to organize data effectively. This module emphasizes solving real-world coding problems by combining the right data structures with suitable algorithms ensuring optimal performance. I also learned how to analyze algorithmic complexities using Big-O notation that helps me to evaluate and improve the efficiency of the solution. 
+
