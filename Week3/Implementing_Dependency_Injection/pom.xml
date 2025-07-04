@@ -21,6 +21,14 @@
             <artifactId>spring-context</artifactId>
             <version>6.2.5</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>6.2.8</version>
+        </dependency>
+
     </dependencies>
 
 </project>
