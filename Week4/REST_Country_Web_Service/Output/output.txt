@@ -1,0 +1,9 @@
+1)What happens in the controller method?
+When any user hit http://localhost:8083/country, setCountryIndia() method is triggered because of the @GetMapping("/country"). Inside Controller A Country object is already initialized from the XML bean using: ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
+Country country = (Country) context.getBean("country"); and method returns the Country object.
+
+2)  How is the bean converted into JSON response?
+Spring MVC automatically convert Java object(beans) into JSON using a tool called Jackson when we use @RestController
+
+
+
