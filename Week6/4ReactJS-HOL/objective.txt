@@ -1,0 +1,53 @@
+1) Explain the need and Benefits of component life cycle->
+
+Component life cycle defines is the life cycle of a component from it's creation(insertion) in DOM to it's removal between these two stage we run our custom logic.
+There are 4 stages of a components life cycle:
+a) Mounting - In mounting phase a component is created and added to the DOM. 
+b) Updatation - In updating phase whenever there are changes to the component's state it is re-rendered to reflect the new data .
+c) Unmounting - In unmounting phase component is removed from the DOM. This is the perfect time to perform any necessary cleanup, aborting API call.
+d) Error Handling - error handling phase is designed to catch and respond to errors that occur during rendering or in lifecycle methods of components. 
+
+* Need of component life cycle ->
+To initialize data like when we want to fetch data from an API when the component mounts.
+To control re-rendering behavior based on prop or state changes.
+To handle DOM operations.
+To clean up resources when the component is no longer needed.
+To handle errors.
+
+* Benefits->
+a) Controlled Data Fetching.
+Using componentDidMount() allows us to load data when a component is ready.
+b) Improved Performance
+With shouldComponentUpdate() React lets us avoid unnecessary re-renders which boosts performance.
+c) Better Resource Management
+Lifecycle methods like componentWillUnmount() help you clean up memory leaks by stopping timers, closing connections and removing event listeners.
+
+
+
+2) Identify various life cycle hook methods->
+
+constructor() - Initialize state, bind event handlers
+render() - Return JSX that renders the component
+componentDidMount()-Run after the component is mounted ideal for API calls, DOM setup.
+shouldComponentUpdate() - Decide whether to re-render the component.
+render()- Re-renders the component
+getSnapshotBeforeUpdate()- Capture some information.
+componentDidUpdate()- Called after the component updates useful for interacting with the updated DOM.
+
+componentWillUnmount()	Clean up tasks: clear intervals, abort fetch, remove listeners
+componentDidCatch()	Catch error and log or display error message
+
+
+3) List the sequence of steps in rendering a component
+
+a) Mounting - In mounting phase a component is created and added to the DOM.
+constructor(props)
+render()
+componentDidMount()
+b) Updatation - In updating phase whenever there are changes to the component's state it is re-rendered to reflect the new data .
+shouldComponentUpdate(nextProps, nextState)
+render()
+c) Unmounting - In unmounting phase component is removed from the DOM. This is the perfect time to perform any necessary cleanup, aborting API call.
+componentWillUnmount()
+d) Error Handling - error handling phase is designed to catch and respond to errors that occur during rendering or in lifecycle methods of components.
+componentDidCatch(error, info) 
