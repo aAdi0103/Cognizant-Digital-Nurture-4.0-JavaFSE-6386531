@@ -1,0 +1,14 @@
+1) List the features of ES6->
+i) Introduction of let, const - Block-scoped variable declarations
+ii) Introduction of literal templates - String interpolation with backticks
+iii) Arrow Functions  - Shorter function syntax.
+iv) Modules (import/export) 
+
+2) let - let is a keyword that is used to declare block-scoped variables means variables declared with let are only accessible within the block they are defined. We can reassign values to variables declared with let. Although they are hoisted but they are not accessible before their declaration.
+
+3) var vs let - 
+
+The primary difference between let and var  are hoisting and re-declaration. var is function-scoped which means it is accessible throughout the entire function in which it is declared even before its actual declaration due to hoisting. This hoisting lifts the variable declaration but not assignment to the top of its scope which can lead to unexpected behaviors. In the other hand let is block-scoped meaning it is only accessible within the nearest pair of curly braces {} where it is defined such as in loops, conditionals and functions. let is also hoisted but remains in a temporal dead zone until its declaration is encountered which prevents it from being accessed prematurely. var allows re-declaration within the same scope which can lead to accidental overwrites while let throws a syntax error if we try to redeclare the same variable in the same scope.
+
+4) const -  const is used to declare block-scoped constants. once a variable is declared with const then it can't be changed later
+
